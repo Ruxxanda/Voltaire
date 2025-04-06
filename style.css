@@ -1,0 +1,251 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-position: center;
+    background-size: cover;
+}
+
+a {
+    text-decoration: none;
+    color: #000000;
+}
+
+img {
+    object-fit: cover;
+    object-position: center;
+    border-radius: 20px;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #000000;
+    color: #ffffff;
+}
+
+header {
+    background-image: linear-gradient(#00000049, #00000038), url('imagini/imag\ 1.jpeg');
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5% 10%;
+}
+
+section {
+    margin: 5% 30%;
+}
+
+
+/* section.despre {
+    margin: 5% 30%;
+} */
+
+section.despre .jos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+section.despre .jos .inf {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-size: 20px;
+}
+
+section.curiozitati {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    gap: 20px;
+}
+
+section.curiozitati .divi {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+section.curiozitati .divi .curi {
+    flex: 0 0 calc(50% - 10px);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #eea785;
+    height: 100px;
+    border-radius: 20px;
+    width: 200px;
+    padding: 10px;
+}
+
+section.curiozitati .divi .curi i {
+    font-size: 50px;
+    display: block;
+}
+
+section.curiozitati .divi .curi h3 {
+    display: none;
+}
+
+section.curiozitati .divi .curi:hover i {
+    display: none;
+}
+
+section.curiozitati .divi .curi:hover h3 {
+    display: block;
+}
+
+section.carti {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+section.carti .cartes {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+
+section.carti .cartes .carte {
+    width: 610px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+section.carti .cartes .carte.x2 {
+    flex-direction: row-reverse;
+}
+
+section.carti .cartes .carte.x2 .info {
+    text-align: end;
+}
+
+section.carti .cartes .carte .info {
+    font-size: 20px;
+    width: 40%;
+    text-align: start;
+}
+
+section.test {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 20px;
+}
+
+iframe {
+    width: 640px;
+    height: 3375px;
+    border: none;
+    border-radius: 20px;
+}
+
+@media (max-width: 650px) {
+    iframe {
+        width: 60vh;
+        min-height: 3700px;
+    }
+    section.despre .jos {
+        justify-content: center;
+        gap: 30px;
+    }
+    section.curiozitati {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+    section.curiozitati .divi {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+    section.curiozitati .divi .curi {
+        flex: 0 0 calc(50% - 10px);
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        background-color: #eea785;
+        height: 100px;
+        border-radius: 20px;
+        width: 400px;
+        padding: 10px;
+    }
+    section.curiozitati .divi .curi i {
+        font-size: 40px;
+        display: block;
+    }
+    section.curiozitati .divi .curi h3 {
+        display: none;
+        font-size: 15px;
+    }
+    section.curiozitati .divi .curi:hover i {
+        display: none;
+    }
+    section.curiozitati .divi .curi:hover h3 {
+        display: block;
+    }
+}
+
+@media (max-width: 650px) {
+    section.carti {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+    section.carti .cartes {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+    }
+    section.carti .cartes .carte {
+        width: 610px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+    }
+    section.carti .cartes .carte.x2 {
+        flex-direction: column;
+    }
+    section.carti .cartes .carte .info {
+        text-align: center !important;
+    }
+    section.despre .jos {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    section {
+        margin: 5% 10%;
+        text-align: center;
+    }
+}
